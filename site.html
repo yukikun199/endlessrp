@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Information Form</title>
+    <style>
+        body {
+            font-family: 'Luxurious Roman', 'Arial', sans-serif;
+            background-color: #b6c8eb;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .container {
+            width: 80%; /* Adjust the width as needed */
+            max-width: 600px; /* Set a maximum width if desired */
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #8dcbf5;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #a9d3f1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="3dgifmaker24865.gif" alt="Header GIF">
+</header>
+
+<div class="container">
+    <form action="#" method="post">
+        <label for="discordName">Discord name with #:</label>
+        <input type="text" id="discordName" name="discordName" placeholder="Your Discord Name" required>
+
+        <label for="characterName">Character Name:</label>
+        <input type="text" id="characterName" name="characterName" placeholder="Your Character's Name" required>
+
+        <label for="characterBackstory">Character Backstory:</label>
+        <textarea id="characterBackstory" name="characterBackstory" placeholder="Your Character's Backstory" rows="5" required></textarea>
+
+        <label for="characterObjective">Character Objective:</label>
+        <textarea id="characterObjective" name="characterObjective" placeholder="Your Character's Objective" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+        <button href="index.html" class="dropdown-item">back</button>
+    </form>
+</div>
+
+</body>
+</html>
